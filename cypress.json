@@ -1,0 +1,23 @@
+{
+    "env":{
+        "TAGS": "not @ignore"
+    },
+    "baseUrl": "http://prova.stefanini-jgr.com.br/teste/qa/",
+    "testFiles": "**/*.feature",
+    "viewportHeight": 880,
+    "viewportWidth": 1280,
+    "video": true,
+    "screenshotsFolder": "cypress/results/screenshots",
+    "videosFolder": "cypress/results/videos",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnanbled": "cypress-mochawesome-reporter",
+        "cypressMochawesomeReporterReporterOptions": {
+            "reportDir": "cypress/report/mochawesome-report",
+            "charts": true,
+            "reporPagetTitle": "Relatório Cypress",
+            "embeddedScreenshots": true,
+            "inlineAssets": true
+        }
+    }
+}

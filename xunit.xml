@@ -1,0 +1,16 @@
+<testsuite name="Mocha Tests" tests="10" failures="0" errors="1" skipped="0" timestamp="Sun, 24 Jul 2022 18:22:04 GMT" time="42.762">
+<testcase classname="Teste Stefanini" name="Verificar se os campos Nome, E-mail e Senha est&#xE3;o com valor inicial vazio" time="8.827"/>
+<testcase classname="Teste Stefanini" name="Verificar se os valores do campo Senha est&#xE3;o mascarados, ocultando os valores" time="3.414"/>
+<testcase classname="Teste Stefanini" name="Validar se o bot&#xE3;o Cadastrar tendo preenchido os campos Nome, E-mail e Senha com dados v&#xE1;lidos, realiza o envio dos dados inseridos para a tabela de resultados" time="2.782"/>
+<testcase classname="Teste Stefanini" name="Verificar se ao acionar o bot&#xE3;o Cadastrar sem ter preenchido algum dos campos Nome, E-mail e Senha, o sistema apresenta mensagem de erro" time="1.825"/>
+<testcase classname="Teste Stefanini" name="Verificar se ao acionar o bot&#xE3;o Cadastrar tendo preenchido somente o primeiro nome no campo Nome, o sistema apresenta mensagem de erro" time="1.876"/>
+<testcase classname="Teste Stefanini" name="Verificar se ao acionar o bot&#xE3;o Cadastrar tendo preenchido o campo E-mail com um e-mail inv&#xE1;lido, o sistema apresenta mensagem de erro" time="2.065"/>
+<testcase classname="Teste Stefanini" name="Verificar se ao acionar o bot&#xE3;o Cadastrar tendo preenchido o campo Senha com menos de 8 caracteres, o sistema apresenta mensagem de erro" time="3.823"/>
+<testcase classname="Teste Stefanini" name="Verificar se ao acionar o bot&#xE3;o Excluir de um elemento da tabela de usu&#xE1;rios, o sistema exclui a linha em quest&#xE3;o" time="5.119"/>
+<testcase classname="Teste Stefanini" name="Validar se a tabela de usu&#xE1;rios N&#xC3;O &#xE9; exibida enquanto n&#xE3;o houver usu&#xE1;rios cadastrados" time="3.378"/>
+<testcase classname="Teste Stefanini" name="Validar ordem de cadastro por id na tabela de usu&#xE1;rios" time="0"><failure>Timed out retrying after 4000ms: Expected to find element: &#x60;table&#x60;, but never found it.
+AssertionError: Timed out retrying after 4000ms: Expected to find element: &#x60;table&#x60;, but never found it.
+    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\integration\Teste-Stefanini.feature:145:6)
+    at Context.resolveAndRunStepDefinition (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\integration\Teste-Stefanini.feature:10793:29)
+    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\integration\Teste-Stefanini.feature:10114:35)</failure></testcase>
+</testsuite>
