@@ -70,11 +70,25 @@ class pgCadastro {
     }
 
     validaErroCamposVazios(){
-        cy.contains('p' , elem.erroNome, elem.erroEmail, elem.erroSenha).should('be.visible');
+        this.validaErroNome
+        this.validaErroEmail
+        this.validaErroSenha
     }
     validaErroNome(){
         cy.contains(elem.erroNome).should('be.visible');
     }
+    validaErroEmail(){
+        cy.contains(elem.erroEmail).should('be.visible');
+    }
+    validaErroSenha(){
+        cy.contains(elem.erroSenha).should('be.visible');
+    }
+
+    validaExclusaolinha2(){
+        cy.get(elem.segundoUsuario).should('not.exist');
+    }
+
+
 
 }
 

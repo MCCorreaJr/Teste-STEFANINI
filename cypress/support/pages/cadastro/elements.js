@@ -5,7 +5,8 @@ export const ELEMENTS = {
     botaoCadastrar: '#register',
     botaoExcluir: '#removeUser2',
     tabela: 'table',
-    erroNome: 'O campo Nome é obrigatório',
-    erroEmail: 'Por favor, insira um nome completo',
-    erroSenha: 'A senha deve conter ao menos 8 caracteres'
+    erroNome: 'Por favor, insira um nome completo.',
+    erroEmail: 'Por favor, insira um e-mail válido.',
+    erroSenha: 'A senha deve conter ao menos 8 caracteres',
+    segundoUsuario: '#removeUser2'
 }

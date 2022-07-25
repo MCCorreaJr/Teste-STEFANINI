@@ -62,7 +62,7 @@ When(/^clico no botão Cadastrar$/, () => {
 });
 
 Then(/^o sistema exibe a mensagem de erro 'Por favor, insira um nome completo.'$/, () => {
-    cy.contains('p', 'Por favor, insira um nome completo').should('be.visible');
+    pgCadastro.validaErroNome();
 });
 
 
@@ -84,7 +84,7 @@ When(/^clico no botão Cadastrar$/, () => {
 });
 
 Then(/^o sistema exibe a mensagem de erro "([^"]*)"$/, () => {
-	cy.contains('p', 'Por favor, insira um e-mail válido').should('be.visible')
+	pgCadastro.validaErroEmail();
 });
 
 And(/^digito o nome completo$/, () => {
@@ -105,7 +105,7 @@ When(/^clico no botão Cadastrar$/, () => {
 
 
 Then(/^o sistema exibe a mensagem de erro sobre senha errada "([^"]*)"$/, (args2) => {
-	cy.contains('p', 'A senha deve conter ao menos 8 caracteres').should('be.visible');
+	pgCadastro.validaErroSenha();
 });
 
 And(/^já possui a tabela com usuários cadastrados$/, () => {
@@ -120,13 +120,13 @@ When(/^clico no botão "([^"]*)"$/, (args1) => {
 });
 
 Then(/^o sistema exclui a linha em questão com sucesso$/, () => {
-	cy.get('#removeUser2').should('not.exist');
+	pgCadastro.validaExclusaolinha2()
 });
 
 
 
 When(/^não houver usuários cadastrados$/, () => {
-	return true;
+	pgCadastro.validaCamposObrigatorios();
 });
 
 Then(/^verifico que a tabela de usuários não é exibida$/, () => {
